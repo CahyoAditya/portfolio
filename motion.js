@@ -11,13 +11,15 @@
    * Diagonal marquee carousel
    * ------------------------------------------------------------------ */
 
+  // Right-sized derivatives: the originals are up to 3600x4800, which is 12x
+  // more pixels to decode than the carousel can ever show.
   var CARDS = [
-    './assets/8.png',
-    './assets/project_1.png',
-    './assets/3.png',
-    './assets/5.png',
+    './assets/opt/8.webp',
+    './assets/opt/project_1.webp',
+    './assets/opt/3.webp',
+    './assets/opt/5.webp',
     './assets/project_2.jpeg',
-    './assets/7.png',
+    './assets/opt/7.webp',
     './assets/4.png',
     './assets/6.png'
   ];

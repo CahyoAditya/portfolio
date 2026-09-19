@@ -1,174 +1,334 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./assets/logo.ico" type="image/x-icon">
-    <title>NAP - Portfolio</title>
-
-    <!-- Khusus font ygy -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#06060C">
+<script>document.documentElement.className += " js";</script>
+<title>Aditya Cahyo Nugroho — 2D Game Developer &amp; Pixel Artist</title>
+<meta name="description" content="Aditya Cahyo Nugroho — 2D game developer and pixel artist. I design and build games end to end: gameplay systems, tooling, and hand-drawn pixel art. Computer Science student at IPB University.">
+<link rel="canonical" href="https://cahyoaditya.github.io/portfolio/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://cahyoaditya.github.io/portfolio/">
+<meta property="og:title" content="Aditya Cahyo Nugroho — 2D Game Developer &amp; Pixel Artist">
+<meta property="og:description" content="2D games built end to end: gameplay systems, tooling, and hand-drawn pixel art.">
+<meta property="og:image" content="https://cahyoaditya.github.io/portfolio/assets/profile.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="./assets/logo.ico" type="image/x-icon">
+<link rel="stylesheet" href="./assets/fonts/inter.css">
+<link rel="stylesheet" href="./assets/fonts/quicksand.css">
+<link rel="stylesheet" href="./style.css">
 </head>
-
 <body>
-    <header>
-        <div class="navbar">
-            <div class="left-navbar">
-                <a href="#">
-                    <div><img src="./assets/logo.png" alt="logo-navbar"></div>
-                    <div>Nama Adit Pasaran</div>
-                </a>
-            </div>
+<a class="skip-link" href="#homepage">Skip to content</a>
 
-            <div class="right-navbar">
-                <a href="#homepage">Home</a>
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
-            </div>
+<svg class="svg-defs" aria-hidden="true" focusable="false" width="0" height="0">
+  <defs>
+    <filter id="goo" x="-25%" y="-60%" width="150%" height="220%" color-interpolation-filters="sRGB">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="7" result="blur"></feGaussianBlur>
+      <feColorMatrix in="blur" mode="matrix"
+        values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 22 -11" result="goo"></feColorMatrix>
+    </filter>
+  </defs>
+</svg>
+
+<nav class="gnav" id="gnav" aria-label="Primary">
+  <a class="gnav__brand" href="#homepage">
+    <span class="gnav__mark"><img src="./assets/logo.png" alt="" width="20" height="20"></span>
+    <span class="gnav__wordmark">Aditya Cahyo</span>
+  </a>
+
+  <div class="gnav__pill">
+    <div class="gnav__goo" aria-hidden="true">
+      <span class="gnav__trail gnav__trail--3"></span>
+      <span class="gnav__trail gnav__trail--2"></span>
+      <span class="gnav__trail gnav__trail--1"></span>
+      <span class="gnav__blob"></span>
+    </div>
+    <ul class="gnav__list">
+      <li><a class="gnav__link is-active" href="#homepage" aria-current="page">Home</a></li>
+      <li><a class="gnav__link" href="#about">About</a></li>
+      <li><a class="gnav__link" href="#projects">Work</a></li>
+      <li><a class="gnav__link" href="#contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <a class="gnav__cta" href="#contact">Let&rsquo;s talk</a>
+</nav>
+
+<main>
+  <article class="hero" id="homepage">
+    <div class="hero__aura" aria-hidden="true"></div>
+    <div class="hero__inner">
+      <div class="hero__media reveal">
+        <div class="hero__frame">
+          <img class="hero__portrait" src="./assets/profile-720.webp" width="720" height="900"
+               fetchpriority="high" decoding="async"
+               alt="Aditya Cahyo Nugroho wearing a blue IPB campus uniform in front of the university monument">
         </div>
-    </header>
+      </div>
 
-    <main>
-        <div id="content">
-            <article id="homepage">
-                <img class="profile" src="./assets/profile.jpg" alt="profile-photo">
-                <div class="homepage-description">
-                    <div class="name">
-                        <h1>Aditya Cahyo Nugroho</h1>
-                    </div>
-                    <div class="tag">
-                        <div class="univ"><button><span class="anibutton"><span>Institut Pertanian Bogor</span></span></button></div>
-                        <div class="nim"><button><span class="anibutton"><span>M0403241109</span></span></button></div>
-                        <div class="proxy"><button><span class="anibutton"><span>Proxy Gauss</span></span></button>
-                        </div>
-                    </div>
-                    <a href="#about">
-                        <button class="homepage-button">
-                            <span>
-                                <span>
-                                    Player Profile
-                                </span>
-                            </span>
-                        </button>
-                    </a>
-                </div>
-            </article>
+      <div class="hero__body reveal" style="--rd: 0.1s">
+        <p class="hero__role">2D Game Developer &amp; Pixel Artist</p>
+        <h1 class="hero__name">Aditya Cahyo Nugroho</h1>
+        <p class="hero__lead">
+          I design and build 2D games end to end &mdash; gameplay systems, tooling,
+          and hand-drawn pixel art.
+        </p>
 
-            <article id="about">
-                <h2 class="section-title">Player Profile</h2>
-                <div class="about-container">
-                    <p>
-                        As a game developer and pixel artist, I build immersive worlds pixel by pixel. My passion lies in combining intricate
-                        code with handcrafted art to create engaging and nostalgic gaming experiences. From designing core mechanics to
-                        illustrating every character sprite, I love bringing unique stories and memorable adventures to life. My goal is to
-                        craft games that are not only fun to play but also resonate with players through their visual charm and detailed worlds.
-                    </p>
-                </div>
-            </article>
+        <ul class="chips">
+          <li class="chip">Computer Science &middot; 3rd year</li>
+          <li class="chip">Institut Pertanian Bogor</li>
+        </ul>
 
-            <article id="projects">
-                <h2 class="section-title">My Projects</h2>
-                <div class="project-gallery">
-                    <div class="main-projects">
-                        <div class="project-item">
-                            <img src="./assets/project_1.png" alt="Main Project 1">
-                            <div class="project-overlay">
-                                <a href="https://p-esc.itch.io/149-escaping-life-student-denshatsu" class="details-button">Check Details</a>
-                            </div>
-                        </div>
-                        <div class="project-item">
-                            <img src="./assets/project_2.jpeg" alt="Main Project 2">
-                            <div class="project-overlay">
-                                <a href="https://globalgamejam.org/games/2025/bubble-virus-0" class="details-button">Check Details</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="side-projects">
-                        <div class="project-item">
-                            <img src="./assets/3.png" alt="Side Project 1">
-                            <div class="project-overlay">
-                                <a href="https://www.instagram.com/atomicsart/" class="details-button">Check Details</a>
-                            </div>
-                        </div>
-                        <div class="project-item">
-                            <img src="./assets/4.png" alt="Side Project 2">
-                            <div class="project-overlay">
-                                <a href="https://www.instagram.com/atomicsart/" class="details-button">Check Details</a>
-                            </div>
-                        </div>
-                        <div class="project-item">
-                            <img src="./assets/5.png" alt="Side Project 3">
-                            <div class="project-overlay">
-                                <a href="https://www.instagram.com/atomicsart/" class="details-button">Check Details</a>
-                            </div>
-                        </div>
-                        <div class="project-item">
-                            <img src="./assets/6.png" alt="Side Project 4">
-                            <div class="project-overlay">
-                                <a href="https://www.instagram.com/atomicsart/" class="details-button">Check Details</a>
-                            </div>
-                        </div>
-                        <div class="project-item">
-                            <img src="./assets/7.png" alt="Side Project 5">
-                            <div class="project-overlay">
-                                <a href="https://www.instagram.com/atomicsart/" class="details-button">Check Details</a>
-                            </div>
-                        </div>
-                        <div class="project-item">
-                            <img src="./assets/8.png" alt="Side Project 6">
-                            <div class="project-overlay">
-                                <a href="https://www.instagram.com/atomicsart/" class="details-button">Check Details</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-
-            <article id="contact">
-                <h2 class="section-title">Get In Touch</h2>
-                <p class="contact-subtitle">I'm always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
-                <div class="social-links">
-                    <a href="https://github.com/CahyoAditya" target="_blank" title="GitHub">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12,2A10,10,0,0,0,2,12c0,4.42,2.87,8.17,6.84,9.5.5.09.68-.22.68-.48s0-.85,0-1.65c-2.78.6-3.37-1.34-3.37-1.34-.45-1.15-1.11-1.46-1.11-1.46-.91-.62.07-.6.07-.6,1,.07,1.53,1.03,1.53,1.03.89,1.53,2.34,1.09,2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94,0-1.1.39-1.99,1.03-2.69-.1-.25-.45-1.27.1-2.65,0,0,.84-.27,2.75,1.02.79-.22,1.65-.33,2.5-.33s1.71.11,2.5.33c1.91-1.29,2.75-1.02,2.75-1.02.55,1.38.2,2.4.1,2.65.64.7,1.03,1.6,1.03,2.69,0,3.84-2.34,4.68-4.57,4.93.36.31.68.92.68,1.85,0,1.34,0,2.42,0,2.75s.18.57.69.48A10,10,0,0,0,22,12,10,10,0,0,0,12,2Z"/></svg>
-                    </a>
-                    <a href="https://www.linkedin.com/in/aditya-cahyo-nugroho-472878323/" target="_blank" title="LinkedIn">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19,3a2,2,0,0,1,2,2V19a2,2,0,0,1-2,2H5a2,2,0,0,1-2-2V5A2,2,0,0,1,5,3H19M18.5,18.5V13.2A3.26,3.26,0,0,0,15.24,9.94c-1.5,0-2.44,1-2.44,1V18.5H9.5V9.5h3.28V11.3s.93-1.8,3-1.8c2.22,0,3.72,1.48,3.72,4.2Z"/><rect x="5.8" y="9.5" width="3.28" height="9"/></svg>
-                    </a>
-                    <a href="https://www.instagram.com/adityacahyo_gns/" target="_blank" title="Instagram">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M7.8,2H16.2C19.4,2,22,4.6,22,7.8V16.2A5.2,5.2,0,0,1,16.2,22H7.8C4.6,22,2,19.4,2,16.2V7.8A5.2,5.2,0,0,1,7.8,2M7.6,4A3.6,3.6,0,0,0,4,7.6V16.4A3.6,3.6,0,0,0,7.6,20H16.4A3.6,3.6,0,0,0,20,16.4V7.6A3.6,3.6,0,0,0,16.4,4H7.6M17.25,5.5A1.25,1.25,0,0,1,18.5,6.75,1.25,1.25,0,0,1,17.25,8,1.25,1.25,0,0,1,16,6.75,1.25,1.25,0,0,1,17.25,5.5M12,7a5,5,0,0,1,5,5,5,5,0,0,1-5,5,5,5,0,0,1-5-5A5,5,0,0,1,12,7m0,2a3,3,0,0,0-3,3,3,3,0,0,0,3,3,3,3,0,0,0,3-3A3,3,0,0,0,12,9Z"/></svg>
-                    </a>
-                    <a href="mailto:adityacahyo104@gmail.com" target="_blank" title="Email">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"/></svg>
-                    </a>
-                </div>
-            </article>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#projects">
+            <span>View Projects</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h12m0 0-5-5m5 5-5 5"/></svg>
+          </a>
+          <a class="btn btn--ghost" href="#contact"><span>Get in Touch</span></a>
         </div>
-    </main>
+      </div>
+    </div>
+  </article>
 
-    <div class="wave-container">
-        <svg viewBox="0 0 1440 180" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-                <linearGradient id="waveGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                    <stop offset="0%" style="stop-color:var(--purple)" />
-                    <stop offset="100%" style="stop-color:var(--pink)" />
-                </linearGradient>
-            </defs>
-            <path d="M1440,91.2642533 C1224.22547,135.212456 1004.2291,159 735.836511,159 C412.836511,159 211.31015,108.313985 0,3 L0,180 L1440,180 L1440,91.2642533 Z" fill="url(#waveGradient)"></path>
-        </svg>
+  <section class="section section--about" id="about">
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__stage" data-marquee></div>
+      <div class="marquee__fade marquee__fade--top"></div>
+      <div class="marquee__fade marquee__fade--bottom"></div>
     </div>
 
-    <footer>
-        <div class="footer-content">
-             <p>&copy; 2025 Aditya Cahyo Nugroho. All Rights Reserved.</p>
+    <div class="section__inner">
+      <header class="section__head reveal">
+        <p class="kicker">About</p>
+        <h2 class="section-title">Player Profile</h2>
+      </header>
+
+      <ul class="stats glass reveal" style="--rd: 0.06s">
+        <li><span class="stats__v">13</span><span class="stats__k">Repositories</span></li>
+        <li><span class="stats__v">4</span><span class="stats__k">Godot games</span></li>
+        <li><span class="stats__v">8</span><span class="stats__k">Languages</span></li>
+      </ul>
+
+      <div class="about-grid reveal" style="--rd: 0.12s">
+        <div class="glass card about-card">
+          <p class="bio__lead">As a game developer and pixel artist, I build immersive worlds pixel by pixel.</p>
+          <ul class="bio__points">
+            <li>
+              <span class="bio__label">Approach</span>
+              <span class="bio__text">My passion lies in combining intricate code with handcrafted art to create engaging and nostalgic gaming experiences.</span>
+            </li>
+            <li>
+              <span class="bio__label">Pipeline</span>
+              <span class="bio__text">From designing core mechanics to illustrating every character sprite, I love bringing unique stories and memorable adventures to life.</span>
+            </li>
+            <li>
+              <span class="bio__label">Goal</span>
+              <span class="bio__text">My goal is to craft games that are not only fun to play but also resonate with players through their visual charm and detailed worlds.</span>
+            </li>
+          </ul>
         </div>
-    </footer>
+
+        <dl class="facts glass">
+          <div class="facts__row">
+            <dt>Education</dt>
+            <dd>Computer Science, Institut Pertanian Bogor</dd>
+          </div>
+          <div class="facts__row">
+            <dt>Stage</dt>
+            <dd>Third-year undergraduate</dd>
+          </div>
+          <div class="facts__row">
+            <dt>Focus</dt>
+            <dd>2D game development &amp; pixel art</dd>
+          </div>
+          <div class="facts__row">
+            <dt>GitHub</dt>
+            <dd><a href="https://github.com/CahyoAditya" target="_blank" rel="noopener">@CahyoAditya</a></dd>
+          </div>
+        </dl>
+      </div>
+
+      <h3 class="subhead reveal">Toolbox</h3>
+      <ul class="toolbox reveal" style="--rd: 0.06s">
+        <li style="--fd: 0s"><img src="./assets/icons/godot.svg" width="30" height="30" loading="lazy" decoding="async" alt="Godot"></li>
+        <li style="--fd: 0.3s"><img src="./assets/icons/renpy.svg" width="30" height="30" loading="lazy" decoding="async" alt="Ren&rsquo;Py"></li>
+        <li style="--fd: 0.6s"><img src="./assets/icons/c.svg" width="30" height="30" loading="lazy" decoding="async" alt="C"></li>
+        <li style="--fd: 0.9s"><img src="./assets/icons/cplusplus.svg" width="30" height="30" loading="lazy" decoding="async" alt="C++"></li>
+        <li style="--fd: 1.2s"><img src="./assets/icons/asm.svg" width="30" height="30" loading="lazy" decoding="async" alt="x86 Assembly"></li>
+        <li style="--fd: 1.5s"><img src="./assets/icons/javascript.svg" width="30" height="30" loading="lazy" decoding="async" alt="JavaScript"></li>
+        <li style="--fd: 1.8s"><img src="./assets/icons/php.svg" width="30" height="30" loading="lazy" decoding="async" alt="PHP"></li>
+        <li style="--fd: 2.1s"><img src="./assets/icons/html.svg" width="30" height="30" loading="lazy" decoding="async" alt="HTML"></li>
+        <li style="--fd: 2.4s"><img src="./assets/icons/css.svg" width="30" height="30" loading="lazy" decoding="async" alt="CSS"></li>
+        <li style="--fd: 2.7s"><img src="./assets/icons/postgresql.svg" width="30" height="30" loading="lazy" decoding="async" alt="PostgreSQL"></li>
+        <li style="--fd: 3s"><img src="./assets/icons/git.svg" width="30" height="30" loading="lazy" decoding="async" alt="Git"></li>
+        <li style="--fd: 3.3s"><img src="./assets/icons/linux.svg" width="30" height="30" loading="lazy" decoding="async" alt="Linux"></li>
+        <li style="--fd: 3.6s"><img src="./assets/icons/arch.svg" width="30" height="30" loading="lazy" decoding="async" alt="Arch Linux"></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section section--projects" id="projects">
+    <div class="section__inner">
+      <header class="section__head reveal">
+        <p class="kicker">Selected Work</p>
+        <h2 class="section-title">Projects</h2>
+      </header>
+
+      <h3 class="subhead reveal">Games</h3>
+      <div class="project-grid project-grid--main reveal">
+        <a class="project-item project-item--main" href="https://p-esc.itch.io/149-escaping-life-student-denshatsu" target="_blank" rel="noopener">
+          <img src="./assets/project_1.png" width="630" height="500" loading="lazy" decoding="async" alt="149 Escaping Life Student Denshatsu">
+          <span class="project-item__glow" aria-hidden="true"></span>
+          <span class="project-item__meta">
+            <span class="project-item__title">149 &mdash; Escaping Life</span>
+            <span class="project-item__cta">Play on itch.io
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7m0 0H9m8 0v8"/></svg>
+            </span>
+          </span>
+        </a>
+        <a class="project-item project-item--main" href="https://globalgamejam.org/games/2025/bubble-virus-0" target="_blank" rel="noopener">
+          <img src="./assets/project_2.jpeg" width="335" height="168" loading="lazy" decoding="async" alt="Bubble Virus, Global Game Jam 2025">
+          <span class="project-item__glow" aria-hidden="true"></span>
+          <span class="project-item__meta">
+            <span class="project-item__title">Bubble Virus</span>
+            <span class="project-item__cta">Global Game Jam 2025
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7m0 0H9m8 0v8"/></svg>
+            </span>
+          </span>
+        </a>
+      </div>
+
+      <h3 class="subhead subhead--split reveal">
+        <span>Open Source &amp; Engineering</span>
+        <a class="subhead__link" href="https://github.com/CahyoAditya?tab=repositories" target="_blank" rel="noopener">
+          All repositories
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7m0 0H9m8 0v8"/></svg>
+        </a>
+      </h3>
+
+      <ul class="repo-list reveal">
+        <li>
+          <a class="repo" href="https://github.com/CahyoAditya/Deadline-Slayer-The-Ilham-Effect" target="_blank" rel="noopener">
+            <span class="repo__name">Deadline Slayer: The Ilham Effect</span>
+            <span class="repo__stars" aria-label="3 stars">&#9733; 3</span>
+            <span class="repo__desc">3D horror-survival game where you outrun deadlines &mdash; type code to finish tasks and keep your sanity.</span>
+            <span class="repo__tags"><span class="tag-pill">Godot 4.5</span><span class="tag-pill">GDScript</span></span>
+          </a>
+        </li>
+        <li>
+          <a class="repo" href="https://github.com/CahyoAditya/Task-and-Slash" target="_blank" rel="noopener">
+            <span class="repo__name">Task and Slash</span>
+            <span class="repo__desc">2.5D hack-and-slash driven by a Pomodoro timer: every focus session becomes a fight.</span>
+            <span class="repo__tags"><span class="tag-pill">Godot</span><span class="tag-pill">GDScript</span></span>
+          </a>
+        </li>
+        <li>
+          <a class="repo" href="https://github.com/CahyoAditya/Island-Farm" target="_blank" rel="noopener">
+            <span class="repo__name">Island Farm</span>
+            <span class="repo__desc">Minimalist grid-based cozy farming sim built for Micro Jam 061.</span>
+            <span class="repo__tags"><span class="tag-pill">Godot 4.7</span><span class="tag-pill">Pixel art</span></span>
+          </a>
+        </li>
+        <li>
+          <a class="repo" href="https://github.com/CahyoAditya/Sistem-Manajemen-Kategori-Hirarki-Data" target="_blank" rel="noopener">
+            <span class="repo__name">Hierarchical Category Data Structures</span>
+            <span class="repo__desc">Benchmarks a HashMap tree against a left-child right-sibling pointer tree for hierarchical category data.</span>
+            <span class="repo__tags"><span class="tag-pill">C++</span><span class="tag-pill">Data structures</span><span class="tag-pill">Benchmarking</span></span>
+          </a>
+        </li>
+        <li>
+          <a class="repo" href="https://github.com/CahyoAditya/pomocli" target="_blank" rel="noopener">
+            <span class="repo__name">pomocli</span>
+            <span class="repo__desc">A CLI Pomodoro timer written in C with native OS notifications for Linux and macOS.</span>
+            <span class="repo__tags"><span class="tag-pill">C</span><span class="tag-pill">CLI</span><span class="tag-pill">Linux</span></span>
+          </a>
+        </li>
+        <li>
+          <a class="repo" href="https://github.com/CahyoAditya/Basis-Data-Project" target="_blank" rel="noopener">
+            <span class="repo__name">Home Business ERP</span>
+            <span class="repo__desc">Web-based management system for a small home business, built with native PHP (PDO) and PostgreSQL.</span>
+            <span class="repo__tags"><span class="tag-pill">PHP</span><span class="tag-pill">PostgreSQL</span></span>
+          </a>
+        </li>
+      </ul>
+
+      <h3 class="subhead subhead--split reveal">
+        <span>Pixel Art</span>
+        <a class="subhead__link" href="https://www.instagram.com/atomicsart/" target="_blank" rel="noopener">
+          More on Instagram
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7m0 0H9m8 0v8"/></svg>
+        </a>
+      </h3>
+      <div class="art-grid reveal">
+        <a class="project-item" href="https://www.instagram.com/atomicsart/" target="_blank" rel="noopener">
+          <img src="./assets/3.png" width="3600" height="4800" loading="lazy" decoding="async" alt="Pixel art of a blue sky with clouds and a flag">
+          <span class="project-item__glow" aria-hidden="true"></span>
+        </a>
+        <a class="project-item" href="https://www.instagram.com/atomicsart/" target="_blank" rel="noopener">
+          <img src="./assets/4.png" width="480" height="270" loading="lazy" decoding="async" alt="Pixel art of a train carriage interior with clouds through the windows">
+          <span class="project-item__glow" aria-hidden="true"></span>
+        </a>
+        <a class="project-item" href="https://www.instagram.com/atomicsart/" target="_blank" rel="noopener">
+          <img src="./assets/5.png" width="2400" height="1500" loading="lazy" decoding="async" alt="Pixel art of a train station platform with a lone figure">
+          <span class="project-item__glow" aria-hidden="true"></span>
+        </a>
+        <a class="project-item" href="https://www.instagram.com/atomicsart/" target="_blank" rel="noopener">
+          <img src="./assets/6.png" width="640" height="640" loading="lazy" decoding="async" alt="Pixel art character sprite with white hair on a black background">
+          <span class="project-item__glow" aria-hidden="true"></span>
+        </a>
+        <a class="project-item" href="https://www.instagram.com/atomicsart/" target="_blank" rel="noopener">
+          <img src="./assets/7.png" width="1800" height="1800" loading="lazy" decoding="async" alt="Pixel art of a person in a dark coat against a blue tiled wall">
+          <span class="project-item__glow" aria-hidden="true"></span>
+        </a>
+        <a class="project-item" href="https://www.instagram.com/atomicsart/" target="_blank" rel="noopener">
+          <img src="./assets/8.png" width="2400" height="1500" loading="lazy" decoding="async" alt="Pixel art of a green park with a blue globe monument">
+          <span class="project-item__glow" aria-hidden="true"></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--contact" id="contact">
+    <div class="section__inner">
+      <div class="glass contact-card reveal">
+        <p class="kicker">Contact</p>
+        <h2 class="section-title">Get in Touch</h2>
+        <p class="contact-subtitle">
+          Open to new projects, collaborations, and opportunities.
+          The fastest way to reach me is email.
+        </p>
+        <div class="social-links">
+          <a href="https://github.com/CahyoAditya" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12,2A10,10,0,0,0,2,12c0,4.42,2.87,8.17,6.84,9.5.5.09.68-.22.68-.48s0-.85,0-1.65c-2.78.6-3.37-1.34-3.37-1.34-.45-1.15-1.11-1.46-1.11-1.46-.91-.62.07-.6.07-.6,1,.07,1.53,1.03,1.53,1.03.89,1.53,2.34,1.09,2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94,0-1.1.39-1.99,1.03-2.69-.1-.25-.45-1.27.1-2.65,0,0,.84-.27,2.75,1.02.79-.22,1.65-.33,2.5-.33s1.71.11,2.5.33c1.91-1.29,2.75-1.02,2.75-1.02.55,1.38.2,2.4.1,2.65.64.7,1.03,1.6,1.03,2.69,0,3.84-2.34,4.68-4.57,4.93.36.31.68.92.68,1.85,0,1.34,0,2.42,0,2.75s.18.57.69.48A10,10,0,0,0,22,12,10,10,0,0,0,12,2Z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/aditya-cahyo-nugroho-472878323/" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13Zm1.78 13.02H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45C23.2 24 24 23.23 24 22.27V1.73C24 .77 23.2 0 22.22 0Z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/adityacahyo_gns/" target="_blank" rel="noopener" title="Instagram" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7.8,2H16.2C19.4,2,22,4.6,22,7.8V16.2A5.2,5.2,0,0,1,16.2,22H7.8C4.6,22,2,19.4,2,16.2V7.8A5.2,5.2,0,0,1,7.8,2M7.6,4A3.6,3.6,0,0,0,4,7.6V16.4A3.6,3.6,0,0,0,7.6,20H16.4A3.6,3.6,0,0,0,20,16.4V7.6A3.6,3.6,0,0,0,16.4,4H7.6M17.25,5.5A1.25,1.25,0,0,1,18.5,6.75,1.25,1.25,0,0,1,17.25,8,1.25,1.25,0,0,1,16,6.75,1.25,1.25,0,0,1,17.25,5.5M12,7a5,5,0,0,1,5,5,5,5,0,0,1-5,5,5,5,0,0,1-5-5A5,5,0,0,1,12,7m0,2a3,3,0,0,0-3,3,3,3,0,0,0,3,3,3,3,0,0,0,3-3A3,3,0,0,0,12,9Z"/></svg>
+          </a>
+          <a href="mailto:adityacahyo104@gmail.com" title="Email" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"/></svg>
+          </a>
+        </div>
+        <a class="btn btn--primary contact-mail" href="mailto:adityacahyo104@gmail.com">
+          <span>adityacahyo104@gmail.com</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer__inner reveal">
+    <span class="footer__brand">Aditya Cahyo Nugroho</span>
+    <span class="footer__copy">&copy; 2026 &mdash; All Rights Reserved.</span>
+  </div>
+</footer>
+
+<script src="./nav.js" defer></script>
+<script src="./motion.js" defer></script>
 </body>
-
 </html>
-

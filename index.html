@@ -322,6 +322,21 @@
   </section>
 </main>
 
+<div class="waves" aria-hidden="true">
+  <svg class="waves__svg" viewBox="0 24 150 28" preserveAspectRatio="none" focusable="false">
+    <defs>
+      <!-- Eight identical humps so the parallax loop joins seamlessly. -->
+      <path id="wave-curve" d="M-336 44c30 0 58-18 88-18s58 18 88 18 58-18 88-18 58 18 88 18 58-18 88-18 58 18 88 18 58-18 88-18 58 18 88 18v44h-704z"/>
+    </defs>
+    <g class="waves__parallax">
+      <use href="#wave-curve"/>
+      <use href="#wave-curve"/>
+      <use href="#wave-curve"/>
+      <use href="#wave-curve"/>
+    </g>
+  </svg>
+</div>
+
 <footer class="footer">
   <div class="footer__inner reveal">
     <span class="footer__brand">Aditya Cahyo Nugroho</span>

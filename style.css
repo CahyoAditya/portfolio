@@ -1017,10 +1017,59 @@ a { color: inherit; }
 .contact-mail span { overflow: hidden; text-overflow: ellipsis; }
 
 /* --------------------------------------------------------------------------
+   Wave band
+   Decorative brand-gradient glow that dissolves the page into the footer.
+   Four phase-shifted copies of one wave carve translucent dark into it.
+   -------------------------------------------------------------------------- */
+.waves {
+  position: relative;
+  overflow: hidden;
+  height: clamp(150px, 18vh, 210px);
+  margin-bottom: -1px; /* guard against a sub-pixel seam above the footer */
+  /* Reuse the site's own brand ramp so the band belongs to the palette. */
+  background-image: var(--grad-soft);
+}
+
+/* Fade the ramp upward: only a luminous horizon survives above the waves. */
+.waves::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg,
+    var(--bg) 0%,
+    rgba(6, 6, 12, 0.88) 38%,
+    rgba(6, 6, 12, 0.50) 66%,
+    rgba(6, 6, 12, 0) 88%);
+  pointer-events: none;
+}
+
+.waves__svg {
+  position: absolute;
+  inset: auto 0 0;
+  width: 100%;
+  height: 58%;
+  min-height: 84px;
+}
+
+.waves__parallax > use {
+  animation: wave-drift 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+  will-change: transform;
+}
+.waves__parallax > use:nth-child(1) { fill: rgba(6, 6, 12, 0.40); animation-delay: -2s; animation-duration: 7s; }
+.waves__parallax > use:nth-child(2) { fill: rgba(6, 6, 12, 0.58); animation-delay: -3s; animation-duration: 10s; }
+.waves__parallax > use:nth-child(3) { fill: rgba(6, 6, 12, 0.80); animation-delay: -4s; animation-duration: 13s; }
+.waves__parallax > use:nth-child(4) { fill: #06060c; animation-delay: -5s; animation-duration: 20s; }
+
+@keyframes wave-drift {
+  0% { transform: translate3d(-90px, 0, 0); }
+  100% { transform: translate3d(85px, 0, 0); }
+}
+
+/* --------------------------------------------------------------------------
    Footer
    -------------------------------------------------------------------------- */
 .footer {
-  border-top: 1px solid var(--line);
+  /* No hairline: the wave band above already closes the page. */
   padding: var(--s6) clamp(20px, 4vw, 56px) var(--s7);
   background: var(--bg);
 }
@@ -1113,6 +1162,8 @@ a { color: inherit; }
 
   .repo { padding: var(--s4) var(--s5); }
 
+  .waves { height: 132px; }
+
   /* Clear the floating dock so the footer is never hidden behind it. */
   .footer { padding-bottom: calc(104px + env(safe-area-inset-bottom, 0px)); }
 
@@ -1136,4 +1187,5 @@ a { color: inherit; }
   .js .reveal { opacity: 1; transform: none; }
   .marquee__track { animation: none; }
   .toolbox li { animation: none; }
+  .waves__parallax > use { animation: none; }
 }
